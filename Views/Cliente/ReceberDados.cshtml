@@ -1,0 +1,31 @@
+
+Nome: @Model.Nome<br>
+
+Essa e a sua data de nascimento: @Convert.ToDateTime(Model.DataDeNascimento).ToString("dd/MM/yyyy")<br>
+
+Essa e a sua altura: @Model.Altura <br>
+
+Esse e seu peso: @Model.Peso <br>
+
+Esse e o dia em que voce nasceu: @Model.DaiDaSemana <br>
+
+Imc : @String.Format("{0:0.00}",@Model.Imc)
+
+                                                    <pre>
+┌――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――┐
+│        IMC         │                 Classificacao               │
+│⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯│⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯│
+│ ➝Menor que 18,5   │  Abaixo do peso normal                       │
+│――――――――――――――――――――│―――――――――――――――――――――――――――――――――――――――――――――│
+│ ➝De 18,5 ate 24,9 │  Peso Normal                                 │
+│――――――――――――――――――――│―――――――――――――――――――――――――――――――――――――――――――――│
+│ ➝De 25,0 ate 29,9 │  Excesso de peso                             │
+│――――――――――――――――――――│―――――――――――――――――――――――――――――――――――――――――――――│
+│ ➝De  30,0 ate 34,9│  Obesidade classe I                          │
+│――――――――――――――――――――│―――――――――――――――――――――――――――――――――――――――――――――│
+│ ➝De  35,0 ate 39,9│  Obesidade classe II                         │
+│――――――――――――――――――――│―――――――――――――――――――――――――――――――――――――――――――――│
+│ ➝Acima de 40      │  Obesidade classe II                         │
+└――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――┘
+      </pre>
+<h1>Obrigado por preencher, volte sempre !!</h1>

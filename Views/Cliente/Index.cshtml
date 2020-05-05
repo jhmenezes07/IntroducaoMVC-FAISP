@@ -1,0 +1,29 @@
+<form method="POST" asp-controller="Cliente" asp-action="ReceberDados" >
+
+<h1>Cadastro de informaçoes</h1> <br>
+
+ <label>Qual o seu nome?</label>
+ <input type="text" placeholder="Digite aqui" name="nomeCliente" required/>
+
+<br/>
+
+ <label>Qual a sua data de nascimento? </label>
+ <input type="Date" name="dataNascimento"/>
+
+
+<br/>
+
+<label>Qual a sua altura? </label>
+<input type="text" placeholder="Ex: 1,76" name="Altura"/>
+
+
+<br/>
+
+<label>Qual o seu peso?</label>
+ <input type="number" placeholder="Ex: 60" name="Peso"/>
+
+<br/>
+
+<input type="submit" value="Enviar" />
+
+</form>
